@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>project-cv</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1%;
+        padding: 1%;
+      }
+      .icon {
+        width: 26px;
+        height: 26px;
+      }
+      h5 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .container a:link,
+      a:visited {
+        border-bottom: 1px solid #38d9a9;
+        display: block;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+      }
+      .content {
+        background-color: #fff;
+        height: 100%;
+        padding: 14px;
+      }
+
+      /* GOALS */
+      .goals-detail {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        row-gap: 10px;
+      }
+
+      /* TEAM */
+      .team-detail {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        row-gap: 20px;
+        line-height: 0.8;
+      }
+
+      /* TIMELINE */
+      .timeline {
+        grid-row: 1/3;
+        grid-column: 3/4;
+        background-color: #fff;
+      }
+      .timeline p {
+        font-size: 24px;
+        color: #fff;
+        padding: 1px 6px;
+        margin-top: 15px;
+        background-color: #b197fc;
+        border: 1px solid #000;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .timeline-detail {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        line-height: 1.6;
+      }
+
+      /* SCOPES */
+      .scopes-detail {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /* PRIMARY */
+      .primary-detail {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      /* TABLET */
+      @media (max-width: 992px) {
+        .container {
+          display: block;
+        }
+        .content {
+          margin: 20px 0;
+        }
+        .goals-detail,
+        .team-detail,
+        .timeline-detail,
+        .primary-detail {
+          display: block;
+        }
+
+        .icon {
+          display: block;
+          margin: 16px 48%;
+        }
+        .timeline p {
+          margin: 0 48%;
+        }
+      }
+
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .container {
+          max-width: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="p-5">
+      <div class="container bg-primary">
+        <div class="goals content">
+          <div>
+            <a href="digital-cv.html" target="_blank">Goals</a>
+            <div class="goals-detail">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon goals-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h5>Goal 1</h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                cumque.
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon goals-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h5>Goal 2</h5>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, deleniti?
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon goals-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h5>Goal 3</h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores, repudiandae?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="team content">
+            <a href="digital-cv.html" target="_blank">Team</a>
+            <div class="team-detail">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon team-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h5>Member 1</h5>
+                Name:...
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon team-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h5>Member 2</h5>
+                Name:...
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon team-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h5>Member 3</h5>
+                Name:...
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon team-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h5>Member 4</h5>
+                Name:...
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline content">
+          <div>
+            <a href="digital-cv.html" target="_blank">Timeline</a>
+            <div class="timeline-detail">
+              <div><p>01</p></div>
+              <div>
+                <h5>Project Star</h5>
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div><p>02</p></div>
+              <div>
+                <h5>Project Star</h5>
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div><p>03</p></div>
+              <div>
+                <h5>Project Star</h5>
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div><p>04</p></div>
+              <div>
+                <h5>Project Star</h5>
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div><p>05</p></div>
+              <div>
+                <h5>Project Star</h5>
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div><p>06</p></div>
+              <div>
+                <h5>Project Star</h5>
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div><p>07</p></div>
+              <div>
+                <h5>Project Star</h5>
+                Lorem ipsum dolor sit amet.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="scopes content">
+            <a href="digital-cv.html" target="_blank">Scopes</a>
+            <div class="scopes-detail">
+              <div>
+                <h3>IN</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  officiis!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  officiis!
+                </p>
+              </div>
+              <div>
+                <h3>OUT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  officiis!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  officiis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="primary content">
+            <a href="digital-cv.html" target="_blank">Primary</a>
+            <div class="primary-detail">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon primary-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. In,
+                  voluptate!
+                </p>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon primary-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Velit, reprehenderit?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
